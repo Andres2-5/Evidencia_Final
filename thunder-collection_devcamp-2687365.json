@@ -1,0 +1,374 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "devcamp-2687365",
+    "dateExported": "2023-11-27T19:38:11.778Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "3725b2f6-06c7-4000-ab21-e4879dec2f10",
+            "name": "bootcamps",
+            "containerId": "",
+            "created": "2023-11-27T19:29:24.334Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "42b8ba2f-2460-4bc8-864f-3bd7d17c9956",
+            "name": "courses",
+            "containerId": "",
+            "created": "2023-11-27T19:29:24.335Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "fea7711f-79bb-4fa1-ab51-ecd2baf8551f",
+            "name": "reviews",
+            "containerId": "",
+            "created": "2023-11-27T19:29:24.336Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "d772a5b7-6869-4357-9b20-347ae7d65a79",
+            "name": "users",
+            "containerId": "",
+            "created": "2023-11-27T19:29:24.337Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "0a5c5ffc-974f-4d3a-8791-a74a1f644224",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "3725b2f6-06c7-4000-ab21-e4879dec2f10",
+            "name": "Get whole bootcamps",
+            "url": "http://127.0.0.1:7000/bootcamps",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-27T19:29:24.334Z",
+            "modified": "2023-11-27T19:29:24.334Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "93b535fc-5dd4-4d2d-8864-c58550eabf56",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "3725b2f6-06c7-4000-ab21-e4879dec2f10",
+            "name": "Get only one bootcamp",
+            "url": "http://127.0.0.1:7000/bootcamps/6553e2e70bbd0a646b193e97",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-27T19:29:24.336Z",
+            "modified": "2023-11-27T19:29:24.336Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5929ec4e-4291-4627-b2b6-da12026cacc6",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "3725b2f6-06c7-4000-ab21-e4879dec2f10",
+            "name": "Creating a new bootcamp",
+            "url": "http://127.0.0.1:7000/bootcamps",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-27T19:29:24.337Z",
+            "modified": "2023-11-27T19:31:30.896Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Javascript Bootcamp\",\n  \"phone\": 3014408183,\n  \"address\": \"SENA CALLE 52\",\n  \"topics\" : [\n    \"Frontend\"\n    ],\n  \"createdAt\": \"2023-11-27\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2cf76931-04cc-40da-a9c4-ba1e5cc007a9",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "3725b2f6-06c7-4000-ab21-e4879dec2f10",
+            "name": "Updating a bootcamp",
+            "url": "http://127.0.0.1:7000/bootcamps/6553d39a46aace8325bba1ba",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-11-27T19:29:24.338Z",
+            "modified": "2023-11-27T19:29:24.338Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"ESTAMOS...\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "369d87fd-db1b-4969-9141-20d3fe01429e",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "3725b2f6-06c7-4000-ab21-e4879dec2f10",
+            "name": "Deleting a bootcamp",
+            "url": "http://127.0.0.1:7000/bootcamps/6553e4d70910dc8076c328e4",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-11-27T19:29:24.339Z",
+            "modified": "2023-11-27T19:29:24.339Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "656f470d-8c11-471e-a492-d46dc7950ceb",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "42b8ba2f-2460-4bc8-864f-3bd7d17c9956",
+            "name": "Get whole courses",
+            "url": "http://127.0.0.1:7000/courses",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-11-27T19:29:24.340Z",
+            "modified": "2023-11-27T19:29:24.340Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a8dfd3fd-2e31-447d-9d3b-be66fbbe60fc",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "42b8ba2f-2460-4bc8-864f-3bd7d17c9956",
+            "name": "Get only one course",
+            "url": "http://127.0.0.1:7000/courses/6564ef2f0825ca199b5a1150",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-11-27T19:29:24.341Z",
+            "modified": "2023-11-27T19:37:17.565Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9a48c4f1-90bd-418f-bfa7-8910bab00888",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "42b8ba2f-2460-4bc8-864f-3bd7d17c9956",
+            "name": "Creating a new course",
+            "url": "http://127.0.0.1:7000/courses",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-11-27T19:29:24.342Z",
+            "modified": "2023-11-27T19:36:56.040Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Javascript DEMO 2\",\n  \"description\": \"This is the second course\",\n  \"weeks\": 7,\n  \"enroll_cost\": 150000,\n  \"minimum_skill\": \"Beginner\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "285a9f8a-537b-418f-9a4a-377b109d89b1",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "42b8ba2f-2460-4bc8-864f-3bd7d17c9956",
+            "name": "Updating a course",
+            "url": "http://127.0.0.1:7000/courses/50",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2023-11-27T19:29:24.343Z",
+            "modified": "2023-11-27T19:29:24.343Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a8eddc44-337e-41a2-946a-fdcd98bda22e",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "42b8ba2f-2460-4bc8-864f-3bd7d17c9956",
+            "name": "Deleting a course",
+            "url": "http://127.0.0.1:7000/courses/6564ef2f0825ca199b5a1150",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2023-11-27T19:29:24.344Z",
+            "modified": "2023-11-27T19:37:29.027Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9e585cdd-b35d-4d06-9072-c2c1e2db5f41",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "fea7711f-79bb-4fa1-ab51-ecd2baf8551f",
+            "name": "Get whole reviews",
+            "url": "http://127.0.0.1:7000/reviews",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-11-27T19:29:24.345Z",
+            "modified": "2023-11-27T19:29:24.345Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b787a7b7-cdf8-4e08-9508-52d7f976d3d5",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "fea7711f-79bb-4fa1-ab51-ecd2baf8551f",
+            "name": "Get only one review",
+            "url": "http://127.0.0.1:7000/reviews/105",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-11-27T19:29:24.346Z",
+            "modified": "2023-11-27T19:29:24.346Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d99b9488-8e43-48ac-bab5-9e90fff959fe",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "fea7711f-79bb-4fa1-ab51-ecd2baf8551f",
+            "name": "Creating a new review",
+            "url": "http://127.0.0.1:7000/reviews",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-11-27T19:29:24.347Z",
+            "modified": "2023-11-27T19:35:58.581Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"First Review\",\n  \"text\": \"This is one of the best courses I've ever tried.\",\n  \"rating\": 10,\n  \"bootcamp_id\": \"6564ee920825ca199b5a114c\",\n  \"user_id\": \"6564eecd0825ca199b5a114e\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a4487c7f-5120-4bad-bd2b-e0897ab858cc",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "fea7711f-79bb-4fa1-ab51-ecd2baf8551f",
+            "name": "Updating a review",
+            "url": "http://127.0.0.1:7000/reviews/6564ef9e139856f7aa08c5b6",
+            "method": "PUT",
+            "sortNum": 150000,
+            "created": "2023-11-27T19:29:24.348Z",
+            "modified": "2023-11-27T19:36:31.385Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"rating\": 2\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "acf52161-56d0-4902-b274-7ce3be9b2c41",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "fea7711f-79bb-4fa1-ab51-ecd2baf8551f",
+            "name": "Deleting a review",
+            "url": "http://127.0.0.1:7000/reviews/105",
+            "method": "DELETE",
+            "sortNum": 160000,
+            "created": "2023-11-27T19:29:24.349Z",
+            "modified": "2023-11-27T19:29:24.349Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c60d76ce-dec9-457b-9b3c-0b33af82fa75",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "d772a5b7-6869-4357-9b20-347ae7d65a79",
+            "name": "Get whole users",
+            "url": "http://127.0.0.1:7000/users",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2023-11-27T19:29:24.350Z",
+            "modified": "2023-11-27T19:29:24.350Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6d395dc5-4728-4bab-abb3-491ebcfc2ced",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "d772a5b7-6869-4357-9b20-347ae7d65a79",
+            "name": "Get onlyone user",
+            "url": "http://127.0.0.1:7000/users/704",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-11-27T19:29:24.351Z",
+            "modified": "2023-11-27T19:29:24.351Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "536722f8-8e49-4c1f-b89d-ebe90d48b4f7",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "d772a5b7-6869-4357-9b20-347ae7d65a79",
+            "name": "Creating a new user",
+            "url": "http://127.0.0.1:7000/users",
+            "method": "POST",
+            "sortNum": 190000,
+            "created": "2023-11-27T19:29:24.352Z",
+            "modified": "2023-11-27T19:32:29.704Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Daniel\",\n  \"surname\": \"Alarcón\",\n  \"age\": 17,\n  \"email\": \"danielala14fi@gmail.com\",\n  \"password\": \"Thonan123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1388624e-8f67-4fbe-8bdd-66ccda89411c",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "d772a5b7-6869-4357-9b20-347ae7d65a79",
+            "name": "Updating a user",
+            "url": "http://127.0.0.1:7000/users/10",
+            "method": "PUT",
+            "sortNum": 210000,
+            "created": "2023-11-27T19:29:24.353Z",
+            "modified": "2023-11-27T19:29:24.353Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4c74dae4-aeca-4c35-8d22-4aeceea7db90",
+            "colId": "7d2c0e9a-8de8-4400-bfc6-7b1221d10773",
+            "containerId": "d772a5b7-6869-4357-9b20-347ae7d65a79",
+            "name": "Deleting a user",
+            "url": "http://127.0.0.1:7000/users/704",
+            "method": "DELETE",
+            "sortNum": 220000,
+            "created": "2023-11-27T19:29:24.354Z",
+            "modified": "2023-11-27T19:29:24.354Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
